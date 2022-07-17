@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+  
+  <servlet>
+    <description></description>
+    <display-name>SQLServlet</display-name>
+    <servlet-name>SQLServlet</servlet-name>
+    <servlet-class>SQLServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SQLServlet</servlet-name>
+    <url-pattern>/connection</url-pattern>
+  </servlet-mapping>
+  
+  <display-name>JavaSQL</display-name>
+  
+  <welcome-file-list>
+  	<welcome-file>menu.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditServlet</display-name>
+    <servlet-name>EditServlet</servlet-name>
+    <servlet-class>EditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditServlet</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MenuServlet</display-name>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>MenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FundListServlet</display-name>
+    <servlet-name>FundListServlet</servlet-name>
+    <servlet-class>FundListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FundListServlet</servlet-name>
+    <url-pattern>/fund-list</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ExpensesTableServlet</display-name>
+    <servlet-name>ExpensesTableServlet</servlet-name>
+    <servlet-class>ExpensesTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpensesTableServlet</servlet-name>
+    <url-pattern>/expenses-table</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SwitchMonthServlet</display-name>
+    <servlet-name>SwitchMonthServlet</servlet-name>
+    <servlet-class>SwitchMonthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SwitchMonthServlet</servlet-name>
+    <url-pattern>/switch-month</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>EditDataTableServlet</display-name>
+    <servlet-name>EditDataTableServlet</servlet-name>
+    <servlet-class>EditDataTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditDataTableServlet</servlet-name>
+    <url-pattern>/edit-data-table</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
